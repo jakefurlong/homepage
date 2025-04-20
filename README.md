@@ -2,6 +2,8 @@
 
 This is my personal, static website built with HTML, CSS, and a neon-styled cyberpunk aesthetic. It showcases my projects, contact links, and a bit about who I am. The site is designed to be fast, responsive, and visually distinct — built from scratch without frameworks or server-side code.
 
+https://jakefurlong.io
+
 ![Architecture Diagram](./images/homepage.drawio.png)
 
 ---
