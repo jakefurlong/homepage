@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if secret is empty
+        run: |
+          echo "Secret starts with:"
+          echo "${{ secrets.GCP_HOMEPAGE_SA_KEY }}" | head -c 100
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Authenticate with GCP
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: '${{ secrets.GCP_HOMEPAGE_SA_KEY }}'
+
+      - name: Set up gcloud CLI
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ secrets.GCP_HOMEPAGE_PROJECT_ID }}
+
+      #- name: Upload to GCS
+      #  run: |
+      #    gcloud storage cp "./index.html" gs://jakefurlong.io/index.html
+      #    gcloud storage cp "./404.html" gs://jakefurlong.io/404.html
+      #    gcloud storage cp "./style.css" gs://jakefurlong.io/style.css
+      #    gcloud storage cp "./images/jake-flamingo.jpg" gs://jakefurlong.io/images/jake-flamingo.jpg
+        
+

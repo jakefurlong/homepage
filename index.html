@@ -32,7 +32,7 @@
   <main class="content">
     <section id="about">
         <div class="section-panel about-glow">
-      <h2>About</h2>
+      <h2>About Me.</h2>
       <div class="about-content">
         <img src="images/jake-flamingo.jpg" alt="Jake Furlong" class="about-photo" />
         <div class="about-text">
@@ -44,7 +44,7 @@
 
     <section id="projects">
         <div class="section-panel projects-glow">
-      <h2>Projects</h2>
+      <h2>Projects.</h2>
       <p>
         <strong>Haikube</strong> – A Kubernetes-native haiku generator built with Go and OpenAI.
         <a href="https://github.com/jakefurlong/haikube" target="_blank" class="github-link" aria-label="View Haikube on GitHub">
@@ -66,7 +66,7 @@
 
     <section id="contact">
         <div class="section-panel contact-glow">
-      <h2>Contact</h2>
+      <h2>Contact.</h2>
       <p>Email: <a href="mailto:jake.w.furlong@gmail.com">jake.w.furlong@gmail.com</a></p>
       <p><a href="https://www.linkedin.com/in/jake-furlong-4b4115349/" target="_blank">LinkedIn</a></p>
     </div>
@@ -80,9 +80,21 @@
   <script>
     const toggle = document.getElementById('menuToggle');
     const nav = document.getElementById('navLinks');
+    const links = document.querySelectorAll('#navLinks a');
   
+    // Open/close menu on hamburger click
     toggle.addEventListener('click', () => {
       nav.classList.toggle('open');
+    });
+  
+    // Close menu on link tap (mobile safe)
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        // Give time for smooth scroll, then close menu
+        setTimeout(() => {
+          nav.classList.remove('open');
+        }, 100); // small delay so section scroll works first
+      }, { passive: false });
     });
   </script>
 </body>
