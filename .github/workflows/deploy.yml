@@ -28,11 +28,11 @@ jobs:
         with:
           project_id: ${{ secrets.GCP_HOMEPAGE_PROJECT_ID }}
 
-      #- name: Upload to GCS
-      #  run: |
-      #    gcloud storage cp "./index.html" gs://jakefurlong.io/index.html
-      #    gcloud storage cp "./404.html" gs://jakefurlong.io/404.html
-      #    gcloud storage cp "./style.css" gs://jakefurlong.io/style.css
-      #    gcloud storage cp "./images/jake-flamingo.jpg" gs://jakefurlong.io/images/jake-flamingo.jpg
+      - name: Upload to GCS
+        run: |
+          gcloud storage cp "./index.html" gs://jakefurlong.io/index.html
+          gcloud storage cp "./404.html" gs://jakefurlong.io/404.html
+          gcloud storage cp "./style.css" gs://jakefurlong.io/style.css
+          gcloud storage cp "./images/jake-flamingo.jpg" gs://jakefurlong.io/images/jake-flamingo.jpg
         
 
