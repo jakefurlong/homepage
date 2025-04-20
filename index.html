@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FURLONG</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <a href="#" class="logo">FURLONG</a>
+      
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          ☰
+        </button>
+      
+        <nav class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      
+      
+
+  <section class="hero">
+    <h1>Systems that Scale. Tools that Spark.</h1>
+    <p>DevOps in the neon afterglow.</p>
+  </section>
+
+  <main class="content">
+    <section id="about">
+        <div class="section-panel about-glow">
+      <h2>About</h2>
+      <div class="about-content">
+        <img src="images/jake-flamingo.jpg" alt="Jake Furlong" class="about-photo" />
+        <div class="about-text">
+            <p>I’m Jake Furlong, a Site Reliablity Engineer building scalable platforms and internal tools that feel like magic. I blend automation, reliability, and creativity to make infrastructure effortless and fun.</p>
+        </div>
+      </div>
+    </div>  
+    </section>
+
+    <section id="projects">
+        <div class="section-panel projects-glow">
+      <h2>Projects</h2>
+      <p>
+        <strong>Haikube</strong> – A Kubernetes-native haiku generator built with Go and OpenAI.
+        <a href="https://github.com/jakefurlong/haikube" target="_blank" class="github-link" aria-label="View Haikube on GitHub">
+          <svg class="github-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 0C5.372 0 0 5.373 0 12a12 12 0 008.207 11.385c.6.11.793-.26.793-.577 0-.285-.01-1.042-.016-2.046-3.338.725-4.042-1.612-4.042-1.612-.546-1.388-1.334-1.757-1.334-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.808 1.305 3.492.998.108-.776.419-1.305.762-1.605-2.665-.304-5.467-1.333-5.467-5.93 0-1.31.468-2.38 1.236-3.22-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.48 11.48 0 013.003-.404c1.02.005 2.048.138 3.003.404 2.29-1.552 3.295-1.23 3.295-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48 5.921.43.37.823 1.096.823 2.21 0 1.595-.015 2.883-.015 3.274 0 .32.19.694.8.576A12.005 12.005 0 0024 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </p>
+      <p>
+        <strong>Homepage</strong> – A simple but fun static, serverless website hosted on Google Cloud.
+        <a href="https://github.com/jakefurlong/homepage" target="_blank" class="github-link" aria-label="View Haikube on GitHub">
+          <svg class="github-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 0C5.372 0 0 5.373 0 12a12 12 0 008.207 11.385c.6.11.793-.26.793-.577 0-.285-.01-1.042-.016-2.046-3.338.725-4.042-1.612-4.042-1.612-.546-1.388-1.334-1.757-1.334-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.808 1.305 3.492.998.108-.776.419-1.305.762-1.605-2.665-.304-5.467-1.333-5.467-5.93 0-1.31.468-2.38 1.236-3.22-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.48 11.48 0 013.003-.404c1.02.005 2.048.138 3.003.404 2.29-1.552 3.295-1.23 3.295-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48 5.921.43.37.823 1.096.823 2.21 0 1.595-.015 2.883-.015 3.274 0 .32.19.694.8.576A12.005 12.005 0 0024 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </p>
+    </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-panel contact-glow">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:jake.w.furlong@gmail.com">jake.w.furlong@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/jake-furlong-4b4115349/" target="_blank">LinkedIn</a></p>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jake Furlong</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+  
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
