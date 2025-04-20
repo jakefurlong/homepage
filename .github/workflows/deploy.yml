@@ -34,5 +34,6 @@ jobs:
           gcloud storage cp "./404.html" gs://jakefurlong.io/404.html --cache-control="no-cache, max-age=0"
           gcloud storage cp "./style.css" gs://jakefurlong.io/style.css --cache-control="no-cache, max-age=0"
           gcloud storage cp "./images/jake-flamingo.jpg" gs://jakefurlong.io/images/jake-flamingo.jpg --cache-control="no-cache, max-age=0"
+          gcloud storage cp "./images/favicon.png" gs://jakefurlong.io/images/favicon.png --cache-control="no-cache, max-age=0"
         
 
