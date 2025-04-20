@@ -5,6 +5,17 @@
     padding: 0;
   }
   
+  .title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff88;
+    transform: skewY(-10deg) rotateZ(-10deg); /* angled upward */
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+  }
+
   body {
     font-family: 'Orbitron', sans-serif;
     background: linear-gradient(-45deg, #0f0c29, #302b63, #ff0080, #00ffff);
