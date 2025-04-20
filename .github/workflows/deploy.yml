@@ -30,9 +30,9 @@ jobs:
 
       - name: Upload to GCS
         run: |
-          gcloud storage cp "./index.html" gs://jakefurlong.io/index.html
-          gcloud storage cp "./404.html" gs://jakefurlong.io/404.html
-          gcloud storage cp "./style.css" gs://jakefurlong.io/style.css
-          gcloud storage cp "./images/jake-flamingo.jpg" gs://jakefurlong.io/images/jake-flamingo.jpg
+          gcloud storage cp "./index.html" gs://jakefurlong.io/index.html --cache-control="no-cache, max-age=0"
+          gcloud storage cp "./404.html" gs://jakefurlong.io/404.html --cache-control="no-cache, max-age=0"
+          gcloud storage cp "./style.css" gs://jakefurlong.io/style.css --cache-control="no-cache, max-age=0"
+          gcloud storage cp "./images/jake-flamingo.jpg" gs://jakefurlong.io/images/jake-flamingo.jpg --cache-control="no-cache, max-age=0"
         
 
