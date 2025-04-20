@@ -22,7 +22,7 @@ This is my personal, static website built with HTML, CSS, and a neon-styled cybe
 - **JavaScript** (only for interactivity, e.g., nav menu toggle)
 - **GitHub Actions** for continuous deployment
 - **Google Cloud Storage** as the hosting backend
-- **CLoud Load Balancer** to provide SSL and global availability with CDN
+- **Cloud Load Balancer** to provide SSL and global availability with CDN
 
 ---
 
