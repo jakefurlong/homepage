@@ -230,6 +230,20 @@
   .github-icon {
     vertical-align: middle;
   }
+
+  .email-link {
+    margin-left: 0.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 6px #00ffff;
+    transition: transform 0.2s ease;
+  }
+  
+  .linkedin-link {
+    margin-left: 0.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 6px #00ffff;
+    transition: transform 0.2s ease;
+  }
   
   /* Responsive: Mobile-First */
   @media (max-width: 600px) {
