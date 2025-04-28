@@ -10,11 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check if secret is empty
-        run: |
-          echo "Secret starts with:"
-          echo "${{ secrets.GCP_HOMEPAGE_SA_KEY }}" | head -c 100
-
       - name: Checkout repository
         uses: actions/checkout@v4
 

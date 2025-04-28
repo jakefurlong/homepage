@@ -31,3 +31,7 @@ https://jakefurlong.io
 ## 🚀 Deployment
 
 This site is automatically deployed via GitHub Actions to Google Cloud Storage.
+
+
+gcloud storage cp index.html gs://jakefurlong.io \
+  --cache-control="no-cache, max-age=0"
